@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="fh c el ap.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <img href="Screenshot 2024-07-02 201035.png">
+        <h1>Online Shop</h1>
+        <h2>Shop Till you Drop</h2>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/appliciances.html">Appliances</a></li>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/electronics.html">Electronics</a></li>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/fh%20project.html">home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+</body>
+<main>
+    <div class="fixed-circle" id="cartToggle">
+        Cart
+    </div>
+    <div class="cart-dropdown" id="cartDropdown">
+        <ul>
+        
+        </ul>
+    </div>
+    <div class="donne">
+        <section id="clothing">
+            <h3>Clothing</h3>
+            <div class="filter-sidebar">
+                <h5>Filters</h5>
+                <div class="filter-section">
+                    <h3>Type</h3>
+                    <ul>
+                        <li><input data-category="T-Shirt" type="checkbox" onclick="filterPosts()"> T-Shirt</li>
+                        <li><input data-category="Pant" type="checkbox" onclick="filterPosts()"> Pant</li>
+                        <li><input data-category="Dress" type="checkbox" onclick="filterPosts()"> Dress</li>
+                        <li><input data-category="Jacket" type="checkbox" onclick="filterPosts()"> Jacket</li>
+                        <li><input data-category="Skirt" type="checkbox" onclick="filterPosts()"> Skirt</li>
+                        <li><input data-category="Suit" type="checkbox" onclick="filterPosts()"> Suit</li>
+                    </ul>
+                    <h3>Sex</h3>
+                    <ul>
+                        <ul>
+                            <li><input data-sex="f" type="checkbox" onclick="filterPosts()"> Women</li>
+                            <li><input data-sex="m" type="checkbox" onclick="filterPosts()"> Men</li>
+                            <li><input data-sex="u" type="checkbox" onclick="filterPosts()"> Unisex</li>
+                        </ul>
+                    </ul>
+                    <div class="filter-section">
+                        <h3>Price</h3>
+                        <input type="range" id="priceRange" min="1"  value="100" max="100">
+                        <span id="priceDisplay">$1 - $100</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>    
+            <div class="category" data-category="T-Shirt">
+                <h4>T-Shirt</h4>
+                <div class="product" data-prize="29.99">
+                   <img src="https://images.blue-tomato.com/is/image/bluetomato/305178708_front.jpg-K501FWNshh1UcFgXXufBI4fc7Lg/white.jpg?$m4$" alt="T-Shirt">
+                    <pi>Basics but never basic</pi>
+                    <sex data-sex="u"></sex>
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://media.octobre-editions.com/image/upload/c_fill,d_placeholder_dark.png,fl_progressive:semi,h_816,q_auto:best,w_582/qrd0fs258fbyhrgb9irb.jpg" alt="T-Shirt" >
+                    <pi>Monochromatic</pi>
+                    <sex data-sex="u"></sex>
+                    <p >Price: $10.99</p>
+                    <button>Add to cart</button>    
+                </div>  
+                <div class="product" data-prize="9.99">
+                    <img src="https://images.asos-media.com/products/new-balance-life-in-balance-t-shirt-unisexe-sable/201478616-3?$n_640w$&wid=513&fit=constrain" alt="T-Shirt" >
+                    <pi></pi>
+                    <sex data-sex="u"></sex>
+                    <p> Price: $9.99</p>
+                    <button>Add to cart</button>    
+                </div>
+                <div class="product" data-prize="18.99">
+                    <img src="https://dqp736wsu6w3m.cloudfront.net/s3bucket/w1000/looks/520/hock3.jpg" alt="T-Shirt" >
+                    <pi></pi>
+                    <sex data-sex="u"></sex>
+                    <p >Price: $18.99</p>
+                    <button>Add to cart</button>    
+                </div>   
+                <div class="product" data-prize="17.99">  
+                    <img src="https://images.fashiola.in/product-list/300x450/asos/102944837/unisex-oversized-t-shirt-with-leonardo-davinci-print-in-beige.webp" alt="T-Shirt">
+                    <pi></pi>
+                    <sex data-sex="u"></sex>
+                    <p>Price: $17.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="15.99">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjwyIAWB3J2qJvEESeEFFLjdWdU0UJBDHSrkXkUmmCqNt-Hjw5KKXpx6xC0oUnAAXGkRU&usqp=CAU" alt="T-Shirt" >    
+                    <pi></pi> 
+                    <sex data-sex="u"></sex>     
+                    <p >Price: $15.99</p>        
+                    <button>Add to cart</button>        
+                </div>           
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSyt5i5p9epG4Q3GElAfx3PoHITLWYIml9l_YRz6NY0MXRpv43GkZ_SkwNR0LEx8tJT4w&usqp=CAU" alt="T-Shirt"   >           
+                    <pi></pi>    
+                    <sex data-sex="u"></sex>        
+                    <p data-prize="17.99">Price: $17.99</p>         
+                    <button>Add to cart</button>           
+                </div>   
+                <div class="product">
+                    <img src="https://images.zen.com.tn/medias/folder_15_11_2023/8_U2_A1856_08685e92b5.webp" alt="T-Shirt"   >           
+                    <pi></pi> 
+                    <sex data-sex="u"></sex>           
+                    <p data-prize="17.99">Price: $17.99</p>         
+                    <button>Add to cart</button>           
+                </div>     
+            </div>         
+            <div class="category" Data-category="Jacket"> 
+                <h4>Jacket</h4>                     
+                <div class="product">            
+                    <img src="https://images.zen.com.tn/medias/folder_22_01_2024/8_U2_A9381_c598519dc1.webp" alt="Jackets" >            
+                    <pi></pi>   
+                    <sex data-sex="f"></sex>         
+                    <p data-prize="19.99">Price: $19.99</p>            
+                    <button>Add to cart</button>           
+                </div>
+                <div class="product" data-prize="19.99">            
+                    <img src="https://static.e-stradivarius.net/5/photos4/2024/I/0/1/p/1746/558/550/03/1746558550_2_10_2.jpg?t=1713777687276&impolicy=stradivarius-itxmediumhigh&imwidth=236&imformat=chrome&imdensity=2.625" alt="Jackets" >            
+                    <pi></pi>  
+                    <sex data-sex="f"></sex>          
+                    <p>Price: $19.99</p>            
+                    <button>Add to cart</button>           
+                </div>
+                <div class="product" data-prize="19.99">            
+                    <img src="https://cdn-img.prettylittlething.com/2/1/0/2/21022841b0ca6acdd8973867e1f683a9b9bf767e_cni9310_1.jpg" alt="Jackets" >            
+                    <pi></pi>  
+                    <sex data-sex="f"></sex>          
+                    <p>Price: $19.99</p>            
+                    <button>Add to cart</button>           
+                </div>
+                <div class="product" data-prize="59.99">            
+                    <img src="https://images.hugoboss.com/is/image/boss/hbeu50489134_001_350?$large$=&fit=crop,1&align=1,1&lastModified=1699016770000&qlt=80&op_sharpen=1&resMode=sharp2&wid=620" alt="Jackets" >            
+                    <pi></pi>      
+                    <sex data-sex="u"></sex>      
+                    <p>Price: $59.99</p>            
+                    <button>Add to cart</button>           
+                </div>     
+                <div class="product" data-prize="29.99">            
+                    <img src="https://petit-panda.fr/cdn/shop/products/doudoune-courte-brillante-femme_800x.jpg?v=1605944744" alt="Jackets" >            
+                    <pi></pi> 
+                    <sex data-sex="u"></sex>           
+                    <p>Price: $29.99</p>            
+                    <button>Add to cart</button>           
+                </div>      
+                <div class="product" data-prize="15.99">            
+                    <img src="https://www.daytona73.com/21244-large_default/delf-blouson-cuir-homme.jpg" alt="Jackets" >            
+                    <pi></pi>   
+                    <sex data-sex="m"></sex>                      
+                    <p>Price: $15.99</p>            
+                    <button>Add to cart</button>           
+                </div>
+                <div class="product" data-prize="39.99">            
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQABKKrD5r17PZDdzsI1qi10xoH25Wa6nU8I1PnO-qzkh9RpoYfYJIaymUfvPb9NMDf-nU&usqp=CAU" alt="Jackets" >            
+                    <pi></pi>          
+                    <sex data-sex="m"></sex>     
+                    <p>Price: $39.99</p>            
+                    <button>Add to cart</button>           
+                </div>
+                <div class="product" data-prize="29.99">            
+                    <img src="https://cdn.armandthiery.fr/products_images/prod_17458/k_blouson-sunny-at-company-MARINE-front-2.jpg" alt="Jackets" >            
+                    <pi></pi>    
+                    <sex data-sex="m"></sex>         
+                    <p>Price: $29.99</p>            
+                    <button>Add to cart</button>           
+                </div>
+            </div>           
+                       
+            <div class="category" Data-category="Top">  
+                <h4>Top</h4>          
+                <div class="product" data-prize="9.99">           
+                    <img src="https://img.ltwebstatic.com/images3_pi/2023/02/03/16753944962356a670799aa22c79d35e4f26f55e3c_thumbnail_405x552.jpg" alt="Tops" >         
+                    <pi></pi>     
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $9.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="8.99">           
+                    <img src="https://media.nastygal.com/i/nastygal/agg69483_red_xl_2/crop-top-fleuri-%C3%A0-lacer-%C3%A7a-sent-l'%C3%A9t%C3%A9" alt="Tops">
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $8.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="5.99">           
+                    <img src="https://i.pinimg.com/474x/32/8d/08/328d08a3a071b12c614e48193d083dc5.jpg" alt="Tops" >         
+                    <pi></pi> 
+                    <sex data-sex="f"></sex>      
+                    <p>Price: $5.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="4.99">           
+                    <img src="https://guidelook.fr/wp-content/uploads/2019/01/tenue-lycee-crop-top.jpg" alt="Tops" >         
+                    <pi></pi>       
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $4.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="category" Data-category="Dress">
+                <h4>Dress</h4>
+                <div class="product"  data-prize="10.99">
+                    <img src="Robe-longue-lacets-pour-femmes-v-tements-d-t-Sexy-manches-bulles-motif-Floral-fente-haute.webp" alt="Dress" >
+                    <pi>living the Bridgerton dream in this dress</pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $10.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="12.99">
+                    <img src="https://i.pinimg.com/736x/91/02/25/910225dcaab540525883247362793782.jpg" alt="Dress" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $12.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2022/04/15/1650028480aa686ef07ace88b20c6940e4316a2908_thumbnail_720x.webp" alt="Dress" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_Pk3jAIU9pTRs5rcW_UTs2ubeHB4k-sJ7_549jOY0o7WCEoIIB29H7UEbuYBwcRUcmg&usqp=CAU" alt="Dress" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="19.99">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2023/05/19/16844814166d0bb34ba24e3a6b2774a62c866eb2a3_thumbnail_720x.webp" alt="Dress" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p data-prize="19.99">Price: $19.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="category" Data-category="Skirt">
+                <h4>Skirt</h4>
+                <div class="product" data-prize="14.99">
+                    <img src="https://i.pinimg.com/564x/54/f2/d3/54f2d3e50f6a1e8d8306c120f70615aa.jpg" alt="Skirt" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $14.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://i.pinimg.com/736x/55/c9/1c/55c91c148a0c66d2411453f5b1268818.jpg" alt="Skirt" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://shopgreylin.com/cdn/shop/products/G2212WJ5874SoniaRibKnitShrugCardiganG2212S9288RheaPleatedMidiPoplinSkirt.jpg?v=1672937767" alt="Skirt" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://cdn.shopify.com/s/files/1/1728/0739/products/image_2265a1c8-e433-4cdd-b03a-4ddc7f52e780_1400x.jpg" alt="Skirt" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="category" Data-category="Pant">
+                <h4>Pant</h4>
+                <div class="product" data-prize="29.99">
+                    <img src="https://cdn-img.prettylittlething.com/0/0/c/d/00cddbbaa65af3d72f4002b6bbf0760333003dbc_cmu7096_2.jpg" alt="Pants" >
+                    <pi></pi>
+                    <sex data-sex="u"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://www.refinery29.com/images/11630339.jpeg?format=webp&width=513&height=655&quality=85" alt="Pants">
+                    <pi>The perfect look for any occasion</pi>
+                    <sex data-sex="u"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://imagescdn.simons.ca/images/13840-224151-43-A1_2/le-jean-bleu-extralarge-cargo.jpg?__=3" alt="Pants" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $39.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://offduty.in/cdn/shop/files/download_6.webp?v=1691043630" alt="Pants" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $39.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://cdn-img.prettylittlething.com/e/0/f/f/e0ff30e5c70e0fe0ba5a446ed18ec1bfe56d8c01_cnd1018_1.jpg?imwidth=600" alt="Pants">
+                    <pi></pi>
+                    <sex data-sex="f"></sex>   
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXsN62MjzYNg-ujWVQdS0Dj4BRqeaTuZHOAuX53qV03ghV5VLaeEKu3Ongd9A3djhLVc&usqp=CAU" alt="Pants">
+                    <pi></pi>
+                    <sex id="f"></sex>
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://www.mesbonnescopines.com/wp-content/uploads/2022/09/jean-flare-taille-haute-clair.jpg" alt="Pants" >
+                    <pi>Dress to impress</pi>
+                    <sex data-sex="f"></sex>
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">
+                    <img src="https://i.pinimg.com/originals/50/6d/f3/506df32b95aa64d65533fb9a483818f2.jpg" alt="Pants" >
+                    <pi></pi>
+                    <sex data-sex="f"></sex>
+                    <p>Price: $29.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="category">          
+                <h4>Suit</h4>  
+                <div class="product" data-prize="29.99">           
+                    <img src="https://storage.googleapis.com/samsonsurmesure/collectionmariage/samson-sur-mesure-verticale-pio-costume-3-pieces-vert-.webp" alt="Suit" >         
+                    <pi></pi>     
+                    <sex data-sex="m"></sex>   
+                    <p>Price: $19.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">           
+                    <img src="https://storage.googleapis.com/samsonsurmesure/collectionmariage/samson-sur-mesure-ete-2019-4-Costume-bleu-ciel-Gustave-V.webp" alt="Suit" >         
+                    <pi></pi>     
+                    <sex data-sex="m"></sex>       
+                    <p data-prize="29.99">Price: $19.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">           
+                    <img src="https://www.empiredumarie.fr/wp-content/uploads/2024/03/grasse_ciel-0769-scaled-1-300x450.jpg" alt="Suit" >         
+                    <pi></pi>     
+                    <sex data-sex="m"></sex>       
+                    <p >Price: $19.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="29.99">           
+                    <img src="Man Dark Green Slim Fit Summer Suit-2 Piece Suit Wedding Suit-dinner Suit-groomsmen Suit-prom Suit-customized Suit-groom Suit-formal Suit - Etsy.jpeg" alt="Suit" >         
+                    <pi></pi>     
+                    <sex data-sex="m"></sex>       
+                    <p >Price: $19.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="contact">
+        <center><small>Enter message (optional) and click button "Send"</small></center>
+        <div class="wrapper centered">
+          <article class="letter">
+            <div class="side">
+              <h1>Contact us</h1>
+              <p>
+                <textarea placeholder="Your message"></textarea>
+              </p>
+            </div>
+            <div class="side">
+              <p>
+                <input type="text" placeholder="Your name" >
+              </p>
+              <p>
+                <input type="email" placeholder="Your email" >
+              </p>
+              <p>
+                <button id="sendLetter">Send</button>
+              </p>
+            </div>
+          </article>
+          <div class="envelope front"></div>
+          <div class="envelope back"></div>
+</div>
+<p class="result-message centered">Thank you for your message</p>
+    </section>
+<footer>
+     <pa>&copy; 2024 Online Shop</pa>
+</footer>
+<script src="fh c.js"></script>
+</main>
+</html>

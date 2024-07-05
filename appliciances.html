@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="fh c el ap.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+    <header>
+        <img href="Screenshot 2024-07-02 201035.png">
+        <h1>Online Shop</h1>
+        <h2>Shop Till you Drop</h2>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/clothing.html">Clothing</a></li>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/electronics.html">Electronics</a></li>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/fh%20project.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<main>
+    <div class="donne">
+        <section id="appliances">
+            <h3>Appliances</h3>
+            <div class="filter-sidebar">
+                <h5>Filters</h5>
+                <div class="checkbox-option">
+                    <h3>Type</h3>
+                    <input type="checkbox" data-category="Refrigerator" onclick="filterPosts()">
+                    <label>Refrigerator</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-category="Washing Machine" onclick="filterPosts()">
+                    <label>Washing Machine</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-category="Microwave" onclick="filterPosts()">
+                    <label>Microwave</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-category="Oven" onclick="filterPosts()">
+                    <label>Oven</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-category="Dishwasher" onclick="filterPosts()">
+                    <label>Dishwasher</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-category="Air Conditioner" onclick="filterPosts()">
+                    <label>Air Conditioner</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-category="Vacuum Cleaner" onclick="filterPosts()">
+                    <label>Vacuum Cleaner</label>
+                </div>
+                
+                <h3>Brand</h3>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-brand="Samsung" onclick="filterPosts()">
+                    <label for="samsung">Samsung</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-brand="LG" onclick="filterPosts()">
+                    <label for="lg">LG</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-brand="Whirlpool" onclick="filterPosts()">
+                    <label for="whirlpool">Whirlpool</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-brand="GE" onclick="filterPosts()">
+                    <label for="ge">GE</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox"data-brand="Bosch" onclick="filterPosts()">
+                    <label for="bosch">Bosch</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" data-brand="Panasonic" onclick="filterPosts()">
+                    <label for="panasonic">Panasonic</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox"data-brand="Siemens" onclick="filterPosts()">
+                    <label for="siemens">Siemens</label>
+                </div>
+                <h3>Price</h3>
+                <input type="range" id="priceRange" min="15"  value="51100" max="51100">
+                <span id="priceDisplay">$1 - $51100</span>
+            </div>
+        </section>        
+        <section>
+            <div class="category" data-category="Refrigerator">
+                <h4>Refrigerator</h4>
+                <div class="product" data-prize="710.98">
+                    <image src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6328/6328352ld.jpg" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="LG"></brand>
+                    <p>Price: $710.98</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="329.99">
+                    <image src=https://cdn.shopify.com/s/files/1/0088/5335/6623/products/built-in-undercounter-glass-door-beverage-refrigerator_2.jpg?v=1582218484" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="Panasonic"></brand>
+                    <p>Price: $329.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="729.99">
+                    <image src="https://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1017902412??hei=64&wid=64&qlt=50" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="LG"></brand>
+                    <p>Price: $729.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1039.99">
+                    <image src="24 Ideas to Bring Spring to Your Home - The Inspired Room.jpeg" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="LG"></brand>
+                    <p>Price: $1039.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="category" data-category="Microwave">
+                <h4>Microwave</h4>
+                <div class="product" data-prize="1039.99">
+                    <image src="Midea 30L Digital Microwave - Silver available to….jpeg" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="Siemens"></brand>
+                    <p>Price: $1039.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1039.99">
+                    <image src="Swan 20Litre Stealth Digital Microwave Black.jpeg" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="Siemens"></brand>
+                    <p>Price: $1058.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1039.99">
+                    <image src="Top 5 Best Microwave Ovens.jpeg" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="Siemens"></brand>
+                    <p>Price: $900.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1039.99">
+                    <image src="Top microwave oven.jpeg" alt="Refrigerator">
+                    <pi></pi>
+                    <brand data-brand="Siemens"></brand>
+                    <p>Price: $1200.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <h4>Washing Machine</h4>
+            <div class="category" data-category="Washing Machine">
+                <div class="product" data-prize="1000.99">
+                    <image src="d2d4bd76-b363-4640-bcf0-50dee96cc5c1.jpeg" alt="T-Shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1200.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Haier i-Pro Series 3 9kg Washing Machine White - Washing Machines.jpeg" alt="T-Shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1800.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Vestel Turkish designed washing machines.jpeg" alt="T-Shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1100.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Vibration free Samsung washing machines.jpeg" alt="T-Shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1000.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <h4>Air conditionair</h4>
+            <div class="category" data-category="Air conditionair">
+                <div class="product" data-prize="1000.99">
+                    <image src="Cooper & Hunter MIA Series, 1_5 Ton Air Conditioner and Heat Pump, 18000 BTU Wall Mount Ductless Mini Split, 19 SEER Inverter System, 230V_60HZ, Single Head, Includes Wi-Fi and Optional Installation Kit - NO INSTA.jpeg" alt="T-shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1020.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Portable Air Conditioner.jpeg" alt="T-shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1500.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Steps to Take to Save on Air Conditioning Bills.jpeg" alt="T-shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1000.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Whynter ARC-14S 14,000 BTU Dual Hose Portable Air Conditioner with Dehumidifier and Fan for Rooms Up to 500 Square Feet, Includes Storage Bag, Platinum_Black, AC Unit Only.jpeg" alt="T-shirt" >
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1300.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <h4>Oven</h4>
+            <div class="category" data-category="oven">
+                <div class="product" data-prize="1000.99">
+                    <image src="Dacor Transitional double wall oven.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1025.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Deck oven.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1250.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Ovens.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1100.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="VonShef Mini Oven.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1500.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <h4>Vacuum Cleaner</h4>
+            <div class="category" data-category="oven">
+                <div class="product" data-prize="1000.99">
+                    <image src="Bissell Zing Bagged Canister Vacuum, Maroon, 4122 - Corded,Maroon Bagged.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1025.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Dyson's Most Powerful Cordless Vacuum Is Finally on Sale — Get Yours While Supplies Last.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1250.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="Electrolux EC41-2SW.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1100.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product" data-prize="1000.99">
+                    <image src="HOME  APPLIANCES  NEWS -.jpeg" alt="" class="image-container">
+                    <pi></pi>
+                    <brande></brande>
+                    <p>Price: $1500.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </section>
+            
+    </div>
+    <section id="contact">
+        <center><small>Enter message (optional) and click button "Send"</small></center>
+             <div class="wrapper centered">
+               <article class="letter">
+                 <div class="side">
+                   <h1>Contact us</h1>
+                   <p>
+                     <textarea placeholder="Your message"></textarea>
+                   </p>
+                 </div>
+                 <div class="side">
+                   <p>
+                     <input type="text" placeholder="Your name" >
+                   </p>
+                   <p>
+                     <input type="email" placeholder="Your email" >
+                   </p>
+                   <p>
+                     <button id="sendLetter">Send</button>
+                   </p>
+                 </div>
+               </article>
+               <div class="envelope front"></div>
+               <div class="envelope back"></div>
+     </div>
+<p class="result-message centered">Thank you for your message</p>
+    </section>
+    <footer>
+        <pa>&copy; 2024 Online Shop</pa>
+    </footer>
+    <script src="fh ap.js"></script>
+</main>
+</html>

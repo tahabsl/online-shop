@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="fh c el ap.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <img href="Screenshot 2024-07-02 201035.png" class="image image-round image-shadow image-filter image-transform image-animation image-clip">
+        <h1>Online Shop</h1>
+        <h2>Shop Till you Drop</h2>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/clothing.html">Clothing</a></li>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/appliciances.html">Appliances</a></li>
+                <li><a href="file:///C:/Users/hamro/OneDrive/Desktop/fh%20project.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<main>
+    <div class="donne">
+        <section id="electronics">
+            <h3>Electronics</h3>
+            <div class="filter-sidebar">
+                <h5>Filters</h5>
+                <div class="filter-section">
+                    <h3>Type</h3>
+                    <div class="checkbox-option">
+                        <input type="checkbox" data-category="Pc" onclick="filterPosts()">
+                        <label>Pc</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" data-category="Phone" onclick="filterPosts()">
+                        <label>Phone</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" data-category="Tablet" onclick="filterPosts()">
+                        <label>Tablet</label>
+                    </div>
+                    <h3>Brands</h3>
+                    <ul>
+                        <li><input type="checkbox" data-brand="SAMSUNG" onclick="filterPosts()"> SAMSUNG</li>
+                        <li><input type="checkbox" data-brand="Motorola" onclick="filterPosts()"> Motorola</li>
+                        <li><input type="checkbox" data-brand="Google" onclick="filterPosts()"> Google</li>
+                        <li><input type="checkbox" data-brand="Apple" onclick="filterPosts()"> Apple</li>
+                        <li><input type="checkbox" data-brand="Tracfone" onclick="filterPosts()"> Tracfone</li>
+                        <li><input type="checkbox" data-brand="AT&T" onclick="filterPosts()"> AT&T</li>
+                        <li><input type="checkbox" data-brand="BLU" onclick="filterPosts()"> BLU</li>
+                        <li><input type="checkbox" data-brand="Infinix" onclick="filterPosts()"> Infinix</li>
+                        <li><input type="checkbox" data-brand="LP" onclick="filterPosts()"> LP</li>
+                        <li><input type="checkbox" data-brand="Oppo" onclick="filterPosts()"> Oppo</li>
+                        <li><input type="checkbox" data-brand="Nokia" onclick="filterPosts()"> Nokia</li>
+                    </ul>                    
+                </div>
+                <div class="filter-section">
+                    <h3>Price</h3>
+                    <input type="range" id="priceRange" min="15"  value="51100" max="51100">
+                    <span id="priceDisplay">$1 - $51100</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4>PC</h4>
+            <div class="category" data-category="Pc">
+                
+                <div class="product"  data-prize="1000.99">
+                    <img src="PC Asus ROG STRIX.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2500.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Pc gamer portable hp.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2110.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="PC Portable Victus HP 15-fa0022nf - NVIDIA GeForce RTX 3050.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2100.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Test de l'Acer Aspire 1, un PC abordable pour des tâches peu exigeantes - CNET France.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <h4>Phone</h4>
+            <div class="category" data-category="Phone">
+                <div class="product"  data-prize="1000.99">
+                    <img src="Electroplated Case For Samsung Galaxy S22_S21_S20 _ Styleeo, S21 _ Green.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Galaxy S21 vs_ iPhone 12_ Sorry, Apple, but Samsung may have won this round.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="kwmobile Case Compatible with Samsung Galaxy A32 5G Case - TPU Silicone Phone Cover with Soft Finish - Antique Stone.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Xiaomi Mi 10T.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <h4>Tablet</h4>
+            <div class="category" data-brand="Tablet">
+                <div class="product"  data-prize="1000.99">
+                    <img src="20 Best Digital Drawing Tablets That Will Satisfy Your Artistic Soul.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Galaxy Tab S6 Lite _ Fusion - CLEAR.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Samsung dévoile ses Galaxy Tab S7 et S7 Plus _ deux tablettes pour se frotter à l'iPad Pro d'Apple - CNET France.jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="product"  data-prize="1000.99">
+                    <img src="Samsung Galaxy Tab A 10_1 32 GB Wifi Tablet Black (2019).jpeg" alt="pc" class="image-container">
+                    <pi></pi>
+                    <brand></brand>
+                    <p>Price: $ 2150.99</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="contact">
+        <center><small>Enter message (optional) and click button "Send"</small></center>
+             <div class="wrapper centered">
+               <article class="letter">
+                 <div class="side">
+                   <h1>Contact us</h1>
+                   <p>
+                     <textarea placeholder="Your message"></textarea>
+                   </p>
+                 </div>
+                 <div class="side">
+                   <p>
+                     <input type="text" placeholder="Your name" >
+                   </p>
+                   <p>
+                     <input type="email" placeholder="Your email" >
+                   </p>
+                   <p>
+                     <button id="sendLetter">Send</button>
+                   </p>
+                 </div>
+               </article>
+               <div class="envelope front"></div>
+               <div class="envelope back"></div>
+     </div>
+<p class="result-message centered">Thank you for your message</p>
+    </section>
+    <footer>
+        <pa>&copy; 2024 Online Shop</pa>
+    </footer>
+    <script src="fh el.js"></script>
+</main>
+</html>
